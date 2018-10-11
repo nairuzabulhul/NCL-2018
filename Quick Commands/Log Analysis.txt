@@ -1,0 +1,22 @@
+Get unique IPs:
+---------------
+
+cat File.txt | awk '{print $1}' | sort | uniq >> NewFile.txt
+
+cat File.txt | sort -u | wc -l 
+
+
+
+Use Grep with filter on one or more strings:
+--------------------------------------------
+
+cat FileName.txt | grep "GET" | grep "200" | wc -l 
+
+
+
+Sort from greatest to least :
+----------------------------
+cat FileName.txt | awk '{print $2}' | sort -n -r 
+
+
+ 
